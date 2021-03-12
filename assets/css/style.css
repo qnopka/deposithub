@@ -515,6 +515,14 @@ button:focus {
   padding: 0 12vw;
 }
 
+.title-accent {
+  color: #6958d9;
+}
+
+.title-accent__primary {
+  color: #4369c9;
+}
+
 .navbar {
   padding: 2em 2vw 1em;
   border-bottom: 1px solid rgba(172, 172, 172, 0.3);
@@ -601,10 +609,6 @@ button:focus {
   text-decoration: none;
 }
 
-.title-accent__primary {
-  color: #4369c9;
-}
-
 .section-content {
   padding: 6vw 0 1vw;
 }
@@ -629,7 +633,7 @@ button:focus {
 
 sup {
   padding-right: 15px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -665,6 +669,28 @@ sup {
   height: 2px;
   content: "";
   background-color: rgba(172, 172, 172, 0.6);
+}
+
+.customization__title {
+  margin: 0.3em 4vw 1.5em 0;
+}
+
+.customization__list {
+  list-style: none;
+}
+
+.customization__item::before {
+  content: "\2022";
+  color: #6958d9;
+  font-weight: 800;
+  display: inline-block;
+  width: 2em;
+  margin: 0 -1em;
+}
+
+.customization__image {
+  width: 35vw;
+  margin: -100px 0 0 0;
 }
 
 .page-footer {
@@ -719,6 +745,13 @@ sup {
   }
   .benefit__title {
     font-size: 1.3em;
+  }
+}
+
+@media (max-width: 992px) {
+  .customization__image {
+    width: 70vw;
+    margin: -10px 0 0 0;
   }
 }
 

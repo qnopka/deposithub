@@ -75,3 +75,35 @@ sup {
     }
   }
 }
+
+.customization {
+
+  &__title {
+    margin: 0.3em 4vw 1.5em 0;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item::before {
+    content: "\2022";
+    color: $color-accent;
+    font-weight: 800;
+    display: inline-block;
+    width: 2em;
+    margin: 0 -1em;
+  }
+
+  &__image {
+    width: 35vw;
+    margin: -100px 0 0 0;
+  }
+
+  @media (max-width: 992px) {
+    &__image {
+      width: 70vw;
+      margin: -10px 0 0 0;
+    }
+  }
+}

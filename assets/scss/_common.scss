@@ -44,3 +44,11 @@ button:focus{
 .wrapper {
   padding: 0 12vw;
 }
+
+.title-accent {
+  color: $color-accent;
+  &__primary {
+    color: $color-primary;
+  }
+
+}
