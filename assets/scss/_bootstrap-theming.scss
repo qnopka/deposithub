@@ -1,0 +1,28 @@
+.navbar-light .navbar-nav .nav-link {
+  color: $color-dark;
+  position: relative;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+
+  &:after {
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $color-primary;
+    content: "";
+    transition: width 0.3s ease-out;
+  }
+  &:hover:after,
+  &:focus:after {
+    width: 100%;
+  }
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+

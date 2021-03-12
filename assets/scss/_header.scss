@@ -1,0 +1,176 @@
+.navbar {
+  padding: 2em 2vw 1em;
+  border-bottom: 1px solid rgba($color-light-grey, 0.3);
+
+  &__logo {
+    margin-right: 1vw;
+  }
+  &-brand,
+  &-nav {
+    font-weight: 700;
+  }
+  @media (max-width: 322px) {
+    &-brand {
+      font-size: 0.9em;
+      margin-right: 0.1rem;
+    }
+  }
+
+}
+
+.nav {
+  &-item{
+    margin-left: 3vw;
+
+    &:last-of-type {
+      margin-left: 1vw;
+    }
+  }
+
+
+  &-btn {
+    margin-left: 0.5vw;
+    border-radius: 10px;
+    border: none;
+    color: $color-light;
+    padding: 10px 3vw;
+    background-color: $color-primary;
+    transition: background-color 0.3s ease-out;
+
+    &:hover {
+      background-color: $color-accent;
+    }
+  }
+
+  @media (max-width: 1488px) {
+    &-item{
+      margin-left: 1vw;
+    }
+
+    &-btn {
+      margin-left: 0.2vw;
+      padding: 10px 1.5vw;
+    }
+  }
+
+  @media (max-width: 1488px) {
+    &-item{
+      margin-left: 0.4vw;
+    }
+  }
+
+
+}
+
+.header-content {
+  padding: 5vw 12vw;
+  margin: 0 -15px;
+  border-bottom: 1px solid rgba($color-light-grey, 0.3);
+
+ &__title {
+   text-align: right;
+
+   &-emphasis {
+     text-align: left;
+   }
+ }
+
+  @media (max-width: 585px) {
+    &__btn {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  &__btn {
+    margin-left: 0.5vw;
+    border-radius: 10px;
+    border: none;
+    color: $color-light;
+    padding: 10px 2vw;
+    background-color: $color-primary;
+    transition: background-color 0.3s ease-out;
+
+    &:hover {
+      background-color: $color-accent;
+    }
+  }
+}
+@media (max-width: 1488px) {
+  .header-content {
+    padding: 2em 7vw 1em;
+}
+
+@media (max-width: 1126px) {
+  .header-content {
+    padding: 2em 3vw 1em;
+
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    p {
+      text-align: center;
+    }
+    &__btn {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .header-content {
+    &__title {
+      text-align: center;
+
+      &-emphasis {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 492px) {
+  .header-content {
+    &__title {
+      font-size: 2em;
+
+      &-emphasis {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+.social {
+
+  &-menu {
+    padding: 2vw 12vw;
+    border-bottom: 1px solid rgba($color-light-grey, 0.3);
+
+    &__item {
+      margin-right: 3vw;
+      &:last-of-type {
+        margin-right: 1vw;
+      }
+    }
+
+    &__link{
+      color: $color-dark;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.title-accent {
+
+  &__primary {
+    color: $color-primary;
+  }
+}
