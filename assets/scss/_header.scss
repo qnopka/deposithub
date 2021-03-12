@@ -64,7 +64,7 @@
 
 .header-content {
   padding: 5vw 12vw;
-  margin: 0 -15px;
+  margin: 0 -12px;
   border-bottom: 1px solid rgba($color-light-grey, 0.3);
 
  &__title {
@@ -151,6 +151,7 @@
 
   &-menu {
     padding: 2vw 12vw;
+    margin: 0 -12px;
     border-bottom: 1px solid rgba($color-light-grey, 0.3);
 
     &__item {
