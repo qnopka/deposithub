@@ -111,3 +111,35 @@ sup {
     }
   }
 }
+
+.summary {
+  &__description {
+    p {
+      color: $color-light-grey;
+      text-transform: uppercase;
+    }
+  }
+
+  &-desc {
+    margin: 3vw 10vw;
+    text-align: center;
+
+    &__card-title {
+      font-size: 2.5vw;
+      color: $color-accent;
+      font-weight: 800;
+    }
+
+    @media (max-width: 992px) {
+      &__card-title{
+        font-size: 4vw;
+      }
+    }
+
+    @media (max-width: 768px) {
+      &__card-title{
+        font-size: 7vw;
+      }
+    }
+  }
+}

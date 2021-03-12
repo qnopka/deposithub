@@ -486,6 +486,16 @@ template {
   color: #4369c9;
 }
 
+.card {
+  border-radius: 0;
+  border-color: rgba(105, 88, 217, 0.3);
+  padding: 2vw;
+}
+
+.card-text {
+  font-size: 0.9em;
+}
+
 body {
   color: #000000;
   background-color: #ffffff;
@@ -697,6 +707,22 @@ sup {
   margin: -100px 0 0 0;
 }
 
+.summary__description p {
+  color: #acacac;
+  text-transform: uppercase;
+}
+
+.summary-desc {
+  margin: 3vw 10vw;
+  text-align: center;
+}
+
+.summary-desc__card-title {
+  font-size: 2.5vw;
+  color: #6958d9;
+  font-weight: 800;
+}
+
 .page-footer {
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -757,15 +783,28 @@ sup {
     width: 70vw;
     margin: -10px 0 0 0;
   }
+  .summary-desc__card-title {
+    font-size: 4vw;
+  }
 }
 
 @media (max-width: 768px) {
+  .nav-item {
+    margin-left: 3vw;
+    margin-bottom: 1vw;
+  }
+  .nav-item:last-of-type {
+    margin-left: 3vw;
+  }
   .header-content p {
     text-align: center;
   }
   .header-content__btn {
     display: block;
     margin: auto;
+  }
+  .summary-desc__card-title {
+    font-size: 7vw;
   }
 }
 

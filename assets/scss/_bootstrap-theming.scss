@@ -26,3 +26,12 @@
   }
 }
 
+.card {
+  border-radius: 0;
+  border-color: rgba($color-accent, 0.3);
+  padding: 2vw;
+
+  &-text {
+    font-size: 0.9em;
+  }
+}

@@ -26,7 +26,16 @@
       margin-left: 1vw;
     }
   }
+  @media (max-width: 768px) {
+    &-item{
+      margin-left: 3vw;
+      margin-bottom: 1vw;
 
+      &:last-of-type {
+        margin-left: 3vw;
+      }
+    }
+  }
 
   &-btn {
     margin-left: 0.5vw;
