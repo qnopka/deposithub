@@ -52,3 +52,13 @@ button:focus{
   }
 
 }
+
+a {
+  color: $color-accent;
+  font-weight: 700;
+
+  &:hover,
+  &:active {
+    color: $color-primary;
+  }
+}

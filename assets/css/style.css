@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -488,12 +489,11 @@ template {
 
 .card {
   border-radius: 0;
-  border-color: rgba(105, 88, 217, 0.3);
-  padding: 2vw;
+  min-height: 200px;
 }
 
-.card-text {
-  font-size: 0.9em;
+input[type=checkbox], input[type=radio] {
+  margin-top: 8px;
 }
 
 body {
@@ -533,8 +533,16 @@ button:focus {
   color: #4369c9;
 }
 
+a {
+  color: #6958d9;
+  font-weight: 700;
+}
+
+a:hover, a:active {
+  color: #4369c9;
+}
+
 .navbar {
-  padding: 2em 2vw 1em;
   border-bottom: 1px solid rgba(172, 172, 172, 0.3);
 }
 
@@ -723,16 +731,143 @@ sup {
   font-weight: 800;
 }
 
-.page-footer {
-  background-color: rgba(255, 255, 255, 0.8);
+.card-summary {
+  border-color: rgba(105, 88, 217, 0.3);
+  padding: 2vw;
 }
 
-.page-footer__copyright {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-  color: #000000;
-  font-size: 1.25rem;
+.card-summary-text {
+  font-size: 0.9em;
+}
+
+.card-summary {
+  border-color: rgba(105, 88, 217, 0.3);
+  padding: 2vw;
+}
+
+.card-summary-text {
+  font-size: 0.9em;
+}
+
+.card-summary__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-summary__img {
+  max-width: 100%;
+}
+
+.section-summary__bg {
+  background: url("../img/bg.jpg") no-repeat 78% 5vw;
+}
+
+.rating-area {
+  overflow: hidden;
+  width: 180px;
+}
+
+.rating-area:not(:checked) > input {
+  display: none;
+}
+
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 35px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.rating-area:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area > label:active {
+  position: relative;
+}
+
+.form__btn {
+  color: #6958d9;
+  font-weight: 700;
+  margin: 10px auto;
+  border: 1px solid #000000;
+  border-radius: 0;
+  padding: 13px;
+}
+
+.form__btn:hover, .form__btn:active {
+  color: #ffffff;
+  background-color: #6958d9;
+}
+
+.form__input {
+  margin: 20px auto;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #000000;
+  padding: 15px;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #acacac;
+}
+
+.form__input::-moz-placeholder {
+  color: #acacac;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #acacac;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #acacac;
+}
+
+.form__input::placeholder {
+  color: #acacac;
+}
+
+footer {
+  min-height: 200px;
+  background-color: rgba(172, 172, 172, 0.1);
+  border-top: 1px solid rgba(172, 172, 172, 0.3);
+}
+
+@media (max-width: 1680px) {
+  .section-summary__bg {
+    background-position: 90% 3vw;
+  }
 }
 
 @media (max-width: 1488px) {
@@ -766,6 +901,12 @@ sup {
   }
 }
 
+@media (max-width: 1200px) {
+  .section-summary__bg {
+    background: none;
+  }
+}
+
 @media (max-width: 1126px) {
   h1, h2 {
     font-size: 2.5em;
@@ -785,6 +926,18 @@ sup {
   }
   .summary-desc__card-title {
     font-size: 4vw;
+  }
+  .card__rating {
+    text-align: center;
+  }
+  .rating-area {
+    width: 34vw;
+  }
+}
+
+@media (max-width: 820px) {
+  .rating-area {
+    width: 35vw;
   }
 }
 
@@ -818,10 +971,25 @@ sup {
   }
 }
 
+@media (max-width: 670px) {
+  .rating-area {
+    width: 38vw;
+  }
+}
+
 @media (max-width: 585px) {
   .header-content__btn {
     display: block;
     margin: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  .rating-area {
+    width: 41vw;
+  }
+  .rating-area:not(:checked) > label {
+    width: 30px;
   }
 }
 
@@ -831,6 +999,15 @@ sup {
   }
   .header-content__title-emphasis {
     font-size: 2em;
+  }
+}
+
+@media (max-width: 370px) {
+  .rating-area {
+    width: 44vw;
+  }
+  .rating-area:not(:checked) > label {
+    width: 25px;
   }
 }
 

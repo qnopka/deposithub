@@ -143,3 +143,158 @@ sup {
     }
   }
 }
+
+.card-summary {
+  border-color: rgba($color-accent, 0.3);
+  padding: 2vw;
+
+  &-text {
+    font-size: 0.9em;
+  }
+}
+
+.card-summary {
+  border-color: rgba($color-accent, 0.3);
+  padding: 2vw;
+
+  &-text {
+    font-size: 0.9em;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+}
+
+.section-summary {
+
+  &__bg {
+    background: url("../img/bg.jpg") no-repeat 78% 5vw;
+  }
+
+  @media (max-width: 1680px) {
+    &__bg {
+      background-position: 90% 3vw;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__bg {
+      background: none;
+    }
+  }
+}
+
+.rating-area {
+  overflow: hidden;
+  width: 180px;
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 35px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+  content: '★';
+}
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .card__rating {
+    text-align: center;
+  }
+  .rating-area {
+    width: 34vw;
+  }
+}
+
+@media (max-width: 820px) {
+  .rating-area {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 670px) {
+  .rating-area {
+    width: 38vw;
+  }
+}
+
+@media (max-width: 530px) {
+  .rating-area {
+    width: 41vw;
+  }
+  .rating-area:not(:checked) > label {
+    width: 30px;
+  }
+}
+
+@media (max-width: 370px) {
+  .rating-area {
+    width: 44vw;
+  }
+  .rating-area:not(:checked) > label {
+    width: 25px;
+  }
+}
+
+.form {
+
+  &__btn {
+    color: $color-accent;
+    font-weight: 700;
+    margin: 10px auto;
+    border: 1px solid $color-dark;
+    border-radius: 0;
+    padding: 13px;
+    &:hover,
+    &:active {
+      color: $color-light;
+      background-color: $color-accent;
+    }
+  }
+
+  &__input {
+    margin: 20px auto;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid $color-dark;
+    padding: 15px;
+
+    &::placeholder {
+      color: $color-light-grey;
+    }
+  }
+}
