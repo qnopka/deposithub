@@ -279,6 +279,7 @@ sup {
     border: 1px solid $color-dark;
     border-radius: 0;
     padding: 13px;
+    transition: all 0.3s ease-out;
     &:hover,
     &:active {
       color: $color-light;
@@ -295,6 +296,11 @@ sup {
 
     &::placeholder {
       color: $color-light-grey;
+    }
+
+    &:focus {
+      border: 1px solid $color-accent;
+      box-shadow: none;
     }
   }
 }

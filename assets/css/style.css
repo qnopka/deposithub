@@ -823,6 +823,9 @@ sup {
   border: 1px solid #000000;
   border-radius: 0;
   padding: 13px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .form__btn:hover, .form__btn:active {
@@ -856,6 +859,12 @@ sup {
 
 .form__input::placeholder {
   color: #acacac;
+}
+
+.form__input:focus {
+  border: 1px solid #6958d9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 footer {
