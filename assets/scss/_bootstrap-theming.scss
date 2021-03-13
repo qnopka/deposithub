@@ -1,3 +1,7 @@
+.navbar {
+  padding: .25rem;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: $color-dark;
   position: relative;
@@ -34,3 +38,5 @@
 input[type=checkbox], input[type=radio] {
   margin-top: 8px;
 }
+
+

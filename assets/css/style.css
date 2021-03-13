@@ -457,6 +457,10 @@ template {
   display: none;
 }
 
+.navbar {
+  padding: .25rem;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #000000;
   position: relative;
@@ -555,7 +559,7 @@ a:hover, a:active {
 }
 
 .nav-item {
-  margin-left: 3vw;
+  margin-left: 2vw;
 }
 
 .nav-item:last-of-type {
