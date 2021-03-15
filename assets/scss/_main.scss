@@ -308,7 +308,7 @@ sup {
 .user-main {
   background-color: rgba($color-light-grey, 0.2);
   margin-bottom: 0;
-  width: 100%;
+  width: 100vw;
   padding: 5vw 3vw 2vw;
 }
 
@@ -316,6 +316,28 @@ sup {
   width: 80px;
   padding-top: 5vw;
   min-height: calc(100vh - 62px);
+
+
+    div {
+      position: fixed;
+      padding-left: 8px;
+    }
+}
+
+.user-nav__menu {
+  position: fixed;
+}
+
+.nav-logout {
+  //margin-top: calc(70vh);
+  position: relative;
+
+  div {
+    position: absolute;
+    bottom: -85vh;
+    padding-left: 0;
+    margin-left: -5px;
+  }
 }
 
 .nav-link__user {
