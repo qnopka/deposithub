@@ -1026,6 +1026,11 @@ sup {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.card-user:hover {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
 .card-user--accent {
   background-color: #4c86f9;
   color: #ffffff;
