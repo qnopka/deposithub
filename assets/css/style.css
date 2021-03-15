@@ -996,6 +996,10 @@ sup {
   color: #ffffff;
 }
 
+.cards-user {
+  margin: 5vw auto;
+}
+
 .card-user {
   margin: 20px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
