@@ -1078,8 +1078,8 @@ sup {
 
 .table-admin th a .fas {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 1.25em;
-  margin-top: 5px;
+  font-size: 1em;
+  margin-top: 10px;
 }
 
 .table-admin tbody tr:hover {
@@ -1111,6 +1111,11 @@ sup {
 
 .table-data__small {
   font-size: 0.9em;
+}
+
+.table-data__edit {
+  vertical-align: middle;
+  padding-left: 10px;
 }
 
 .table-data__status {
