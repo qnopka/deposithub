@@ -176,5 +176,42 @@
   }
 }
 
+.fas,
+.far {
+  color: rgba($color-light-grey, 0.8);
+  font-size: 1.5em;
+  transition: color 0.3s ease-out;
 
+  &:hover {
+    color: $color-accent-light;
+  }
+}
 
+.user {
+  &-navbar {
+    padding: 0;
+    border: 0;
+
+    &__header {
+      flex-grow: 1;
+      align-items: center;
+      display: flex!important;
+      flex-basis: auto;
+    }
+  }
+
+  &-nav {
+    border-right: 1px solid rgba($color-light-grey, 0.3);
+    &__menu {
+      padding: 20px 28px 10px;
+    }
+    &--notification {
+      border-left: 1px solid rgba($color-light-grey, 0.3);
+      padding: 20px 10px 10px;
+    }
+  }
+}
+
+.nav-notification {
+  padding-right: 10vw;
+}

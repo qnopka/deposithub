@@ -631,6 +631,56 @@ a:hover, a:active {
   text-decoration: none;
 }
 
+.fas,
+.far {
+  color: rgba(172, 172, 172, 0.8);
+  font-size: 1.5em;
+  -webkit-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.fas:hover,
+.far:hover {
+  color: #4c86f9;
+}
+
+.user-navbar {
+  padding: 0;
+  border: 0;
+}
+
+.user-navbar__header {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+.user-nav {
+  border-right: 1px solid rgba(172, 172, 172, 0.3);
+}
+
+.user-nav__menu {
+  padding: 20px 28px 10px;
+}
+
+.user-nav--notification {
+  border-left: 1px solid rgba(172, 172, 172, 0.3);
+  padding: 20px 10px 10px;
+}
+
+.nav-notification {
+  padding-right: 10vw;
+}
+
 main {
   margin-bottom: 5vw;
 }
@@ -869,6 +919,195 @@ sup {
   border: 1px solid #6958d9;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.user-main {
+  background-color: rgba(172, 172, 172, 0.2);
+  margin-bottom: 0;
+  width: 100%;
+  padding: 5vw 3vw 2vw;
+}
+
+.left-sidebar {
+  width: 80px;
+  padding-top: 5vw;
+  min-height: calc(100vh - 62px);
+}
+
+.nav-link__user {
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav-item__user-logout {
+  margin-bottom: 1vw;
+}
+
+.btn-content-user {
+  font-weight: 700;
+  margin: 10px;
+  border-radius: 0;
+  padding: 10px 20px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-content-user:first-of-type {
+  color: #000000;
+}
+
+.btn-content-user:nth-of-type(2) {
+  color: #ffffff;
+  background-color: #4c86f9;
+}
+
+.btn-content-user:hover, .btn-content-user:active {
+  color: #ffffff;
+  background-color: #4369c9;
+}
+
+.btn-small {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 3px 0 0 0;
+}
+
+.btn-small:first-of-type .fas {
+  font-size: 2em;
+}
+
+.btn-small:first-of-type .fas:hover {
+  color: #ffffff;
+}
+
+.btn-small:nth-of-type(2) .fas {
+  color: #ffffff;
+  font-size: 2em;
+  -webkit-transition: color 0.1s ease-out;
+  -o-transition: color 0.1s ease-out;
+  transition: color 0.1s ease-out;
+}
+
+.btn-small:nth-of-type(2) .fas:hover {
+  color: #ffffff;
+}
+
+.card-user {
+  margin: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-user--accent {
+  background-color: #4c86f9;
+  color: #ffffff;
+}
+
+.card-user__description {
+  font-weight: 800;
+  font-size: 3em;
+}
+
+.nav-sort-item {
+  padding: 10px;
+}
+
+.nav-sort-item--active {
+  border-bottom: 2px solid #4c86f9;
+}
+
+.nav-sort-item--active a {
+  color: #000000;
+}
+
+.nav-sort-link {
+  color: #acacac;
+  -webkit-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.nav-sort-link:hover, .nav-sort-link:active {
+  text-decoration: none;
+  color: #4c86f9;
+}
+
+.table-admin {
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.table-admin th {
+  background-color: rgba(172, 172, 172, 0.2);
+}
+
+.table-admin th a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.table-admin th a .fas {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.25em;
+  margin-top: 5px;
+}
+
+.table-admin tbody tr:hover {
+  background-color: rgba(172, 172, 172, 0.1);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-admin td {
+  border-top: 1px solid rgba(172, 172, 172, 0.2);
+  padding: 15px;
+  font-size: 0.95em;
+  vertical-align: middle;
+}
+
+.table-admin td a {
+  color: #4c86f9;
+}
+
+.table-admin td a:hover, .table-admin td a:active {
+  color: #6958d9;
+  text-decoration: none;
+}
+
+.table-admin th:first-child,
+.table-admin td:first-child {
+  text-align: center;
+}
+
+.table-data__small {
+  font-size: 0.9em;
+}
+
+.table-data__status {
+  background-color: rgba(76, 134, 249, 0.1);
+  padding: 10px;
+  min-width: 120px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 800;
+}
+
+.table-data__status--kept {
+  color: #4c86f9;
+}
+
+.table-data__status--removed {
+  color: #d41440;
+}
+
+.table-data__status--expected {
+  color: #4db94c;
 }
 
 footer {
