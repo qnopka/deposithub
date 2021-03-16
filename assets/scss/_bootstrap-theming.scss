@@ -50,30 +50,16 @@ input[type=checkbox], input[type=radio] {
   flex-direction: column;
 }
 
-@media (max-width: 750px) {
-.modal-dialog {
-  max-width: 500px;
-  margin: 1.75rem auto;
-}
-}
-
-@media (max-width: 560px) {
-  .modal {
-    padding-right: 0!important;
-  }
-  .modal-dialog {
-    max-width: 95vw;
-    margin: 0.25rem auto;
-  }
-
+@media (max-width: 938px) {
   .modal-content {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 700px;
+    max-width: 920px;
     margin: 1.75rem auto;
   }
 }
@@ -118,20 +104,3 @@ input[type=checkbox], input[type=radio] {
   border-color: $color-accent;
   background-color: $color-accent;
 }
-//
-//.form-check-input:not(:disabled):not(:checked)+label:hover::before {
-//  border-color: #b3d7ff;
-//}
-//.form-check-input:not(:disabled):active+label::before {
-//  background-color: #b3d7ff;
-//  border-color: #b3d7ff;
-//}
-//.form-check-input:focus+label::before {
-//  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-//}
-//.form-check-input:focus:not(:checked)+label::before {
-//  border-color: #80bdff;
-//}
-//.form-check-input:disabled+label::before {
-//  background-color: #e9ecef;
-//}

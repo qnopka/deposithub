@@ -46,6 +46,12 @@ sup {
   padding: 20px 30px;
   border: 1px solid rgba($color-light-grey, 0.3);
   background-color: $color-light;
+  transition: all 0.3s ease-out;
+  &:hover,
+  &:active {
+    color: $color-light;
+    background-color: $color-accent;
+  }
 }
 
 .calc {
@@ -53,16 +59,11 @@ sup {
     border-radius: 10px;
     background-color: $color-light;
     margin-right: 20px;
-    min-width: 500px;
+    min-width: 600px;
   }
 
-  @media (max-width: 750px) {
-    &-body {
-      min-width: 300px;
-    }
-  }
 
-  @media (max-width: 560px) {
+  @media (max-width: 938px) {
     &-body,
     &-right-sidebar{
       width: 95vw;
@@ -73,20 +74,10 @@ sup {
     }
   }
 
-  @media (max-width: 350px) {
-    &-body {
-      max-width: 250px;
-    }
-  }
-
-  @media (max-width: 310px) {
-    &-body {
-      max-width: 220px;
-    }
-  }
   &-right-sidebar {
     border-radius: 10px;
     background-color: $color-accent;
+    min-width: 300px;
   }
 }
 
@@ -117,7 +108,7 @@ sup {
   }
 
   &-title {
-    font-weight: 800;
+    font-weight: 700;
     text-align: left;
     &--dark {
 
@@ -162,7 +153,7 @@ sup {
   }
 }
 
-.calc-btn {
+.calc-btn__more {
   background-color: $color-accent;
   border-radius: 10px;
   padding: 10px 20px;
