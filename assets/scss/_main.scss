@@ -48,6 +48,136 @@ sup {
   background-color: $color-light;
 }
 
+.calc {
+  &-body {
+    border-radius: 10px;
+    background-color: $color-light;
+    margin-right: 20px;
+    min-width: 500px;
+  }
+
+  @media (max-width: 750px) {
+    &-body {
+      min-width: 300px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    &-body,
+    &-right-sidebar{
+      width: 95vw;
+      margin-top: 20px;
+    }
+    &-body {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 350px) {
+    &-body {
+      max-width: 250px;
+    }
+  }
+
+  @media (max-width: 310px) {
+    &-body {
+      max-width: 220px;
+    }
+  }
+  &-right-sidebar {
+    border-radius: 10px;
+    background-color: $color-accent;
+  }
+}
+
+.modal {
+
+  &-sort{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 20px 0 0 0;
+
+    &__item {
+      padding-right: 30px;
+
+      &:first-of-type {
+        color: $color-light-grey;
+      }
+    }
+
+    &__link {
+      .fas {
+        font-size: 0.8em;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &-title {
+    font-weight: 800;
+    text-align: left;
+    &--dark {
+
+    }
+    &--light {
+      color: $color-light;
+    }
+  }
+}
+
+.calc-range {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &-input {
+    width: 70%;
+
+  }
+
+  &-value {
+    border: 1px solid $color-accent;
+    border-radius: 5px;
+    padding: 5px 30px 5px 15px;
+    outline: 0;
+    transition: border 0.3s ease-out;
+    width: 100px;
+
+    &:focus {
+      border: 2px solid $color-accent;
+    }
+  }
+
+  &-currency {
+    color: $color-light;
+    background-color: $color-accent;
+    padding: 5px 10px;
+    margin-left: -30px;
+    border-radius: 5px;
+  }
+}
+
+.calc-btn {
+  background-color: $color-accent;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: $color-light;
+  font-weight: 700;
+  transition: background-color 0.3s ease-out;
+  margin: 20px;
+
+  &:hover,
+  &:active{
+    background-color: $color-primary;
+    color: $color-light;
+  }
+}
+
 .feature {
 
   &__icon {

@@ -39,4 +39,99 @@ input[type=checkbox], input[type=radio] {
   margin-top: 8px;
 }
 
+.modal-content {
+  background-color: transparent;
+  border: 0;
+  flex-direction: row;
+}
 
+.modal-header {
+  border-bottom: 0;
+  flex-direction: column;
+}
+
+@media (max-width: 750px) {
+.modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
+}
+
+@media (max-width: 560px) {
+  .modal {
+    padding-right: 0!important;
+  }
+  .modal-dialog {
+    max-width: 95vw;
+    margin: 0.25rem auto;
+  }
+
+  .modal-content {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 700px;
+    margin: 1.75rem auto;
+  }
+}
+
+.modal-header .close {
+  padding: 0 1rem;
+  margin: -2rem -1rem -1rem auto;
+}
+
+.form-check {
+  text-align: start;
+}
+
+.form-check-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+
+.form-check-input+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.form-check-input+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.form-check-input:checked+label::before {
+  border-color: $color-accent;
+  background-color: $color-accent;
+}
+//
+//.form-check-input:not(:disabled):not(:checked)+label:hover::before {
+//  border-color: #b3d7ff;
+//}
+//.form-check-input:not(:disabled):active+label::before {
+//  background-color: #b3d7ff;
+//  border-color: #b3d7ff;
+//}
+//.form-check-input:focus+label::before {
+//  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+//}
+//.form-check-input:focus:not(:checked)+label::before {
+//  border-color: #80bdff;
+//}
+//.form-check-input:disabled+label::before {
+//  background-color: #e9ecef;
+//}
