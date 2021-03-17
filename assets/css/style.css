@@ -461,6 +461,11 @@ template {
   padding: .25rem;
 }
 
+.navbar-light .navbar-toggler,
+.navbar-nav {
+  margin-right: 10px;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #000000;
   position: relative;
@@ -576,8 +581,14 @@ body {
   line-height: 2em;
 }
 
-h1, h2 {
+h1 {
   font-size: 4em;
+  font-weight: 700;
+  margin: 0.3em 0;
+}
+
+h2 {
+  font-size: 3em;
   font-weight: 700;
   margin: 0.3em 0;
 }
@@ -662,6 +673,7 @@ a:hover, a:active {
 
 .header-content__title-emphasis {
   text-align: left;
+  font-size: 4em;
 }
 
 .header-content__btn {
@@ -747,6 +759,55 @@ a:hover, a:active {
 
 .nav-notification {
   padding-right: 10vw;
+}
+
+.navbar-service {
+  border-bottom: 0;
+  background: transparent;
+  position: relative;
+}
+
+.navbar-service-bg {
+  background: url(../img/bg-header-service.png) no-repeat center center;
+  width: 100%;
+  min-height: 400px;
+  position: absolute;
+  top: -10%;
+  z-index: -10;
+  opacity: 0.05;
+}
+
+.navbar-service-bg__second {
+  background: url(../img/bg-header-service-1.png) no-repeat center top;
+  background-size: contain;
+  min-height: 70vh;
+  border-bottom: 0;
+}
+
+.navbar-service__item {
+  margin-left: 4vw;
+}
+
+.navbar-service__btn {
+  color: #000000;
+  font-weight: 700;
+  border: 1px solid #6958d9;
+  background-color: #ffffff;
+  padding: 10px 30px;
+}
+
+.navbar-service__btn:hover, .navbar-service__btn:active {
+  color: #ffffff;
+}
+
+.navbar-service__btn--accent {
+  color: #ffffff;
+  background-color: #6958d9;
+}
+
+.navbar-service__btn--accent:hover, .navbar-service__btn--accent:active {
+  background-color: #4369c9;
+  border-color: #4369c9;
 }
 
 main {
@@ -1356,6 +1417,25 @@ footer {
   min-height: 200px;
   background-color: rgba(172, 172, 172, 0.1);
   border-top: 1px solid rgba(172, 172, 172, 0.3);
+}
+
+.footer-service {
+  background-color: transparent;
+  position: relative;
+  border-top: 0;
+}
+
+.footer-service-bg {
+  background: url(../img/bg-header-service.png) no-repeat center center;
+  width: 100%;
+  min-height: 400px;
+  position: absolute;
+  bottom: -20%;
+  z-index: -10;
+  opacity: 0.05;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 @media (min-width: 576px) {

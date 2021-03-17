@@ -2,6 +2,11 @@
   padding: .25rem;
 }
 
+.navbar-light .navbar-toggler,
+.navbar-nav{
+  margin-right: 10px;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: $color-dark;
   position: relative;
