@@ -1421,10 +1421,6 @@ footer {
 }
 
 @media (max-width: 992px) {
-  .customization__image {
-    width: 70vw;
-    margin: -10px 0 0 0;
-  }
   .summary-desc__card-title {
     font-size: 4vw;
   }
@@ -1433,6 +1429,13 @@ footer {
   }
   .rating-area {
     width: 34vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .customization__image {
+    width: 70vw;
+    margin: -10px 0 0 0;
   }
 }
 
@@ -1445,12 +1448,18 @@ footer {
             justify-content: center;
   }
   .calc-body, .calc-right-sidebar {
-    width: 95vw;
+    width: 86vw;
     margin-top: 20px;
-    min-width: 88vw;
+    min-width: 86vw;
   }
   .calc-body {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 930px) {
+  .modal-dialog {
+    margin-left: -20px;
   }
 }
 

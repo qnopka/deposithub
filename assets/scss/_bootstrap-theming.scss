@@ -64,6 +64,13 @@ input[type=checkbox], input[type=radio] {
   }
 }
 
+@media (max-width: 930px) {
+  .modal-dialog {
+
+    margin-left: -20px;
+  }
+}
+
 .modal-header .close {
   padding: 0 1rem;
   margin: -2rem -1rem -1rem auto;

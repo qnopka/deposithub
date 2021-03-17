@@ -23,13 +23,14 @@
   @media (max-width: 938px) {
     &-body,
     &-right-sidebar{
-      width: 95vw;
+      width: 86vw;
       margin-top: 20px;
-      min-width: 88vw;
+      min-width: 86vw;
     }
     &-body {
       margin-right: 0;
     }
+
   }
 
   &-right-sidebar {
