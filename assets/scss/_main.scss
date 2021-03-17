@@ -565,6 +565,11 @@ sup {
   padding: 0 10vw 5vw;
 }
 
+@media (max-width: 1880px) {
+  .price-container {
+    padding: 0 1vw 5vw;
+  }
+}
 
 .card-header:first-child {
   border-radius: 15px 15px 0 0 !important;
@@ -608,13 +613,6 @@ sup {
     }
   }
 
-  &__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 300px;
-  }
-
   &__list {
     list-style: none;
     padding: 0;
@@ -633,6 +631,7 @@ sup {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
 

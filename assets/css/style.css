@@ -1345,20 +1345,6 @@ sup {
   font-weight: 700;
 }
 
-.card-price__description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-height: 300px;
-}
-
 .card-price__list {
   list-style: none;
   padding: 0;
@@ -1381,6 +1367,8 @@ sup {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card-price__order {
@@ -1587,6 +1575,12 @@ footer {
 @media (min-width: 1031px) and (max-width: 1250px) {
   .card-price__title {
     font-size: 1em;
+  }
+}
+
+@media (max-width: 1880px) {
+  .price-container {
+    padding: 0 1vw 5vw;
   }
 }
 
