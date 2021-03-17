@@ -1447,6 +1447,7 @@ footer {
   .calc-body, .calc-right-sidebar {
     width: 95vw;
     margin-top: 20px;
+    min-width: 88vw;
   }
   .calc-body {
     margin-right: 0;
