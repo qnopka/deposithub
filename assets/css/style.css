@@ -1284,6 +1284,28 @@ sup {
   color: #4db94c;
 }
 
+.section-service {
+  padding: 2vw 0;
+}
+
+.section-service__row {
+  border-bottom: 1px solid #6958d9;
+  padding: 6vw 0;
+}
+
+.section-service__title {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.section-service__title span {
+  color: #6958d9;
+}
+
+.section-service__description {
+  font-size: 0.9em;
+}
+
 .btn-calc {
   padding: 20px 30px;
   border: 1px solid rgba(172, 172, 172, 0.3);
@@ -1428,9 +1450,9 @@ footer {
 .footer-service-bg {
   background: url(../img/bg-header-service.png) no-repeat center center;
   width: 100%;
-  min-height: 400px;
+  min-height: 350px;
   position: absolute;
-  bottom: -20%;
+  bottom: 0;
   z-index: -10;
   opacity: 0.05;
   -webkit-transform: rotate(180deg);
