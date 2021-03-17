@@ -40,6 +40,14 @@
   min-height: 200px;
 }
 
+@media (max-width: 991px) {
+  .card-deck .card {
+    flex: auto;
+    margin-bottom: 35px;
+  }
+
+}
+
 input[type=checkbox], input[type=radio] {
   margin-top: 8px;
 }
