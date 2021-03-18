@@ -1445,6 +1445,22 @@ sup {
   color: #6958d9;
 }
 
+.btn-light {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 3vw;
+  margin-left: 0.5vw;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn-light:hover, .btn-light:active {
+  text-decoration: none;
+  background-color: #6958d9;
+  color: #ffffff;
+}
+
 .btn-calc {
   padding: 20px 30px;
   border: 1px solid rgba(172, 172, 172, 0.3);
