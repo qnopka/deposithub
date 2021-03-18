@@ -46,7 +46,9 @@
     transition: background-color 0.3s ease-out;
 
     &:hover {
+      text-decoration: none;
       background-color: $color-accent;
+      color: $color-light;
     }
   }
 
@@ -82,6 +84,19 @@
      text-align: left;
      font-size: 4em;
    }
+
+   &-opacity {
+     margin: 5vw 0;
+    opacity: 0.05;
+     color: $color-dark;
+     font-size: 9vw;
+     line-height: 1em;
+
+     & strong {
+       font-weight: 800;
+     }
+   }
+
  }
 
   @media (max-width: 585px) {

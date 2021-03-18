@@ -457,6 +457,12 @@ template {
   display: none;
 }
 
+.navbar-expand-lg .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .navbar {
   padding: .25rem;
 }
@@ -494,6 +500,10 @@ template {
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #4369c9;
+}
+
+.form-check-input + label {
+  display: block !important;
 }
 
 .card {
@@ -658,7 +668,9 @@ a:hover, a:active {
 }
 
 .nav-btn:hover {
+  text-decoration: none;
   background-color: #6958d9;
+  color: #ffffff;
 }
 
 .header-content {
@@ -674,6 +686,18 @@ a:hover, a:active {
 .header-content__title-emphasis {
   text-align: left;
   font-size: 4em;
+}
+
+.header-content__title-opacity {
+  margin: 5vw 0;
+  opacity: 0.05;
+  color: #000000;
+  font-size: 9vw;
+  line-height: 1em;
+}
+
+.header-content__title-opacity strong {
+  font-weight: 800;
 }
 
 .header-content__btn {
@@ -1403,6 +1427,18 @@ sup {
 .card-price__btn:hover, .card-price__btn:active {
   color: #ffffff;
   background-color: #6958d9;
+}
+
+.accent {
+  color: #6958d9;
+}
+
+.section-id__list span {
+  color: #000000;
+}
+
+.section-id__item {
+  color: #6958d9;
 }
 
 .btn-calc {

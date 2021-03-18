@@ -669,3 +669,19 @@ sup {
   }
 
 }
+
+.accent {
+  color: $color-accent;
+}
+
+.section-id{
+
+  &__list {
+    & span {
+      color: $color-dark;
+    }
+  }
+  &__item {
+    color: $color-accent;
+  }
+}
