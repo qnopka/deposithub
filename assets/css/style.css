@@ -682,6 +682,10 @@ a:hover, a:active {
   border-bottom: 1px solid rgba(172, 172, 172, 0.3);
 }
 
+.header-content__description {
+  padding-bottom: 20px;
+}
+
 .header-content__title {
   text-align: right;
 }
@@ -727,10 +731,6 @@ a:hover, a:active {
 
 .social-menu__item {
   margin-right: 3vw;
-}
-
-.social-menu__item:last-of-type {
-  margin-right: 1vw;
 }
 
 .social-menu__link {
@@ -843,6 +843,10 @@ main {
 
 .section-content {
   padding: 3vw 0 1vw;
+}
+
+.section-content__home {
+  padding-top: 6vw;
 }
 
 .benefits-container,
@@ -1682,6 +1686,9 @@ footer {
   h3 {
     font-size: 1.8em;
   }
+  .wrapper {
+    padding: 0 8vw;
+  }
   .nav-item {
     margin-left: 1vw;
   }
@@ -1691,6 +1698,9 @@ footer {
   }
   .nav-item {
     margin-left: 0.4vw;
+  }
+  .header-content__title-emphasis {
+    font-size: 3em;
   }
   .header-content {
     padding: 2em 7vw 1em;
@@ -1714,13 +1724,26 @@ footer {
 
 @media (max-width: 1126px) {
   h1, h2 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   h3 {
     font-size: 1.7em;
   }
+  .wrapper {
+    padding: 0 6vw;
+  }
+  .header-content__title-emphasis {
+    font-size: 2em;
+  }
+  .section-content__home {
+    padding-top: 10vw;
+  }
   .benefit__title {
     font-size: 1.3em;
+  }
+  .about__description:before {
+    left: -40px;
+    width: 35px;
   }
 }
 
@@ -1795,7 +1818,7 @@ footer {
     margin: auto;
   }
   .summary-desc__card-title {
-    font-size: 7vw;
+    font-size: 12vw;
   }
 }
 
@@ -1812,6 +1835,15 @@ footer {
 @media (max-width: 670px) {
   .rating-area {
     width: 38vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .wrapper {
+    padding: 0 2vw;
+  }
+  .section-content__home {
+    padding-top: 15vw;
   }
 }
 
@@ -1837,6 +1869,12 @@ footer {
   }
   .header-content__title-emphasis {
     font-size: 2em;
+  }
+}
+
+@media (max-width: 450px) {
+  .summary-desc {
+    margin: 3vw 3vw;
   }
 }
 

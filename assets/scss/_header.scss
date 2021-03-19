@@ -78,6 +78,10 @@
   margin: 0 -12px;
   border-bottom: 1px solid rgba($color-light-grey, 0.3);
 
+  &__description {
+    padding-bottom: 20px;
+  }
+
  &__title {
    text-align: right;
 
@@ -86,6 +90,17 @@
      font-size: 3.8em;
    }
 
+   @media (max-width: 1488px) {
+     &-emphasis {
+       font-size: 3em;
+     }
+   }
+
+   @media (max-width: 1126px) {
+     &-emphasis {
+       font-size: 2em;
+     }
+   }
    &-opacity {
      margin: 5vw 0;
     opacity: 0.05;
@@ -181,9 +196,6 @@
 
     &__item {
       margin-right: 3vw;
-      &:last-of-type {
-        margin-right: 1vw;
-      }
     }
 
     &__link{

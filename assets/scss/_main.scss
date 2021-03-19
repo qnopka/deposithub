@@ -4,6 +4,22 @@ main {
 
 .section-content {
   padding: 3vw 0 1vw;
+  &__home {
+    padding-top: 6vw;
+  }
+
+
+  @media (max-width: 1126px) {
+    &__home {
+      padding-top: 10vw;
+    }
+  }
+
+  @media (max-width: 620px) {
+    &__home {
+      padding-top: 15vw;
+    }
+  }
 }
 
 .benefits-container,
@@ -92,6 +108,18 @@ sup {
       background-color: rgba($color-light-grey, 0.6);
     }
   }
+  @media (max-width: 1126px) {
+
+    &__description {
+
+      &:before {
+        left: -40px;
+        width: 35px;
+
+      }
+    }
+  }
+
 }
 
 .customization {
@@ -152,8 +180,14 @@ sup {
 
     @media (max-width: 768px) {
       &__card-title{
-        font-size: 7vw;
+        font-size: 12vw;
       }
+    }
+  }
+
+  @media (max-width: 450px) {
+    &-desc {
+      margin: 3vw 3vw;
     }
   }
 }
