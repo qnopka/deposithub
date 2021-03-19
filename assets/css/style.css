@@ -706,7 +706,7 @@ a:hover, a:active {
   border-radius: 10px;
   border: none;
   color: #ffffff;
-  padding: 10px 2vw;
+  padding: 15px 4vw;
   background-color: #4369c9;
   -webkit-transition: background-color 0.3s ease-out;
   -o-transition: background-color 0.3s ease-out;
@@ -1833,6 +1833,12 @@ footer {
 @media (max-width: 670px) {
   .rating-area {
     width: 38vw;
+  }
+}
+
+@media (max-width: 668px) {
+  .social-menu__scroll {
+    display: none;
   }
 }
 
