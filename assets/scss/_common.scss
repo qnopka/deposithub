@@ -53,6 +53,10 @@ h3 {
 
 @media (max-width: 620px) {
 
+  h1, h2 {
+    font-size: 8vw;
+  }
+
   .wrapper {
     padding: 0 2vw;
   }
