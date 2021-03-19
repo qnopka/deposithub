@@ -34,18 +34,20 @@
   @media (max-width: 992px) {
     &-item{
       margin-bottom: 2vw;
-      padding-top: 1vw;
+      padding-top: 0.5vw;
     }
   }
 
   @media (max-width: 620px) {
     &-item{
       margin-bottom: 3vw;
+      padding-top: 0.75vw;
     }
   }
   @media (max-width: 400px) {
     &-item{
       margin-bottom: 3.5vw;
+      padding-top: 1vw;
     }
   }
 

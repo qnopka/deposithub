@@ -1745,7 +1745,7 @@ footer {
 @media (max-width: 992px) {
   .nav-item {
     margin-bottom: 2vw;
-    padding-top: 1vw;
+    padding-top: 0.5vw;
   }
   .summary-desc__card-title {
     font-size: 4vw;
@@ -1845,6 +1845,7 @@ footer {
   }
   .nav-item {
     margin-bottom: 3vw;
+    padding-top: 0.75vw;
   }
   .section-content__home {
     padding-top: 15vw;
@@ -1886,6 +1887,7 @@ footer {
 @media (max-width: 400px) {
   .nav-item {
     margin-bottom: 3.5vw;
+    padding-top: 1vw;
   }
 }
 
