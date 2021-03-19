@@ -593,7 +593,7 @@ body {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3.8em;
   font-weight: 700;
   margin: 0.3em 0 0.8em 0;
 }
@@ -688,7 +688,7 @@ a:hover, a:active {
 
 .header-content__title-emphasis {
   text-align: left;
-  font-size: 3.5em;
+  font-size: 3.8em;
 }
 
 .header-content__title-opacity {
