@@ -33,6 +33,7 @@
 
       &:last-of-type {
         margin-left: 3vw;
+        margin-top: 3vw;
       }
     }
   }
@@ -98,7 +99,7 @@
 
    @media (max-width: 1126px) {
      &-emphasis {
-       font-size: 2em;
+       font-size: 5vw;
      }
    }
    &-opacity {
@@ -161,10 +162,20 @@
   }
 }
 
+@media (max-width: 1126px) {
+  .header-content {
+    &__title {
+      margin-top: 50px;
+
+    }
+  }
+}
+
 @media (max-width: 710px) {
   .header-content {
     &__title {
       text-align: center;
+
 
       &-emphasis {
         display: block;
@@ -175,10 +186,11 @@
 }
 
 
-@media (max-width: 492px) {
+@media (max-width: 596px) {
   .header-content {
     &__title {
       font-size: 2em;
+
 
       &-emphasis {
         font-size: 2em;
