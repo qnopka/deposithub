@@ -633,6 +633,7 @@ a:hover, a:active {
 
 .navbar {
   border-bottom: 1px solid rgba(172, 172, 172, 0.3);
+  padding: 0 1rem;
 }
 
 .navbar__logo {
@@ -1690,9 +1691,6 @@ footer {
     margin-left: 0.2vw;
     padding: 10px 1.5vw;
   }
-  .nav-item {
-    margin-left: 0.4vw;
-  }
   .header-content__title-emphasis {
     font-size: 3em;
   }
@@ -1745,6 +1743,15 @@ footer {
 }
 
 @media (max-width: 992px) {
+  .navbar-nav {
+    margin-bottom: 20px;
+  }
+  .nav-item {
+    padding-bottom: 10px;
+  }
+  .nav-item:last-of-type {
+    padding-top: 10px;
+  }
   .summary-desc__card-title {
     font-size: 4vw;
   }
@@ -1800,14 +1807,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav-item {
-    margin-left: 3vw;
-    margin-bottom: 1vw;
-  }
-  .nav-item:last-of-type {
-    margin-left: 3vw;
-    margin-top: 3vw;
-  }
   .header-content p {
     text-align: center;
   }
@@ -1895,7 +1894,7 @@ footer {
   }
 }
 
-@media (max-width: 322px) {
+@media (max-width: 340px) {
   .navbar-brand {
     font-size: 0.9em;
     margin-right: 0.1rem;
