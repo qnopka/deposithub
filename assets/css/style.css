@@ -1743,14 +1743,8 @@ footer {
 }
 
 @media (max-width: 992px) {
-  .navbar-nav {
-    margin-bottom: 20px;
-  }
   .nav-item {
-    padding-bottom: 10px;
-  }
-  .nav-item:last-of-type {
-    padding-top: 10px;
+    margin-bottom: 2vw;
   }
   .summary-desc__card-title {
     font-size: 4vw;
@@ -1848,6 +1842,9 @@ footer {
   .wrapper {
     padding: 0 2vw;
   }
+  .nav-item {
+    margin-bottom: 3vw;
+  }
   .section-content__home {
     padding-top: 15vw;
   }
@@ -1885,6 +1882,12 @@ footer {
   }
 }
 
+@media (max-width: 400px) {
+  .nav-item {
+    margin-bottom: 3.5vw;
+  }
+}
+
 @media (max-width: 370px) {
   .rating-area {
     width: 44vw;
@@ -1898,5 +1901,8 @@ footer {
   .navbar-brand {
     font-size: 0.9em;
     margin-right: 0.1rem;
+  }
+  .navbar-nav {
+    margin-bottom: 10px;
   }
 }
