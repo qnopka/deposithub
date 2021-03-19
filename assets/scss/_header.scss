@@ -120,6 +120,7 @@
     &__btn {
       display: block;
       margin: auto;
+      padding: 15px 4vw;
     }
   }
 
@@ -128,7 +129,7 @@
     border-radius: 10px;
     border: none;
     color: $color-light;
-    padding: 15px 4vw;
+    padding: 15px 2vw;
     background-color: $color-primary;
     transition: background-color 0.3s ease-out;
 

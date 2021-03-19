@@ -706,7 +706,7 @@ a:hover, a:active {
   border-radius: 10px;
   border: none;
   color: #ffffff;
-  padding: 15px 4vw;
+  padding: 15px 2vw;
   background-color: #4369c9;
   -webkit-transition: background-color 0.3s ease-out;
   -o-transition: background-color 0.3s ease-out;
@@ -1867,6 +1867,7 @@ footer {
   .header-content__btn {
     display: block;
     margin: auto;
+    padding: 15px 4vw;
   }
 }
 
