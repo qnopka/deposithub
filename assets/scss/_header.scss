@@ -19,7 +19,55 @@
       margin-bottom: 10px;
     }
   }
+  &-service {
+    border-bottom: 0;
+    background: transparent;
+    position: relative;
 
+    &-bg {
+      background: url(../img/bg-header-service.png) no-repeat center center;
+      width: 100%;
+      min-height: 400px;
+      position: absolute;
+      top: -10%;
+      z-index: -10;
+      opacity: 0.05;
+
+      &__second {
+        background: url(../img/bg-header-service-1.png) no-repeat center top;
+        background-size: contain;
+        min-height: 70vh;
+        border-bottom: 0;
+      }
+    }
+    &__item {
+      margin-left: 4vw;
+    }
+
+    &__btn {
+      color: $color-dark;
+      font-weight: 700;
+      border: 1px solid $color-accent;
+      background-color: $color-light;
+      padding: 10px 30px;
+
+      &:hover,
+      &:active {
+        color: $color-light;
+      }
+
+      &--accent{
+        color: $color-light;
+        background-color: $color-accent;
+
+        &:hover,
+        &:active {
+          background-color: $color-primary;
+          border-color: $color-primary;
+        }
+      }
+    }
+  }
 
 }
 
@@ -60,7 +108,8 @@
     background-color: $color-primary;
     transition: background-color 0.3s ease-out;
 
-    &:hover {
+    &:hover,
+    &:active {
       text-decoration: none;
       background-color: $color-accent;
       color: $color-light;
