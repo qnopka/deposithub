@@ -873,8 +873,6 @@ a:hover, a:active {
   width: 100%;
   -webkit-animation: type 10s steps(40, end);
           animation: type 10s steps(40, end);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
