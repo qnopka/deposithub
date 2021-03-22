@@ -341,13 +341,14 @@ sup {
     border-radius: 0;
     border-bottom: 1px solid $color-dark;
     padding: 15px;
+    background-color: transparent;
 
     &::placeholder {
       color: $color-light-grey;
     }
 
     &:focus {
-      border: 1px solid $color-accent;
+      border-bottom: 2px solid $color-accent;
       box-shadow: none;
     }
   }
@@ -754,4 +755,22 @@ sup {
     justify-content: center;
     align-items: center;
   }
+}
+
+.section-paralax {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-paralax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

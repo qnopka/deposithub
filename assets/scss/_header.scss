@@ -130,7 +130,11 @@
 }
 
 .header-content {
-  padding: 5vw 12vw;
+  padding: 5vw 12vw 1vw;
+  min-height: 95vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   border-bottom: 1px solid rgba($color-light-grey, 0.3);
 
   &__description {
@@ -142,7 +146,7 @@
 
    &-emphasis {
      text-align: left;
-     font-size: 3.8em;
+     font-size: 5em;
    }
 
    @media (max-width: 1488px) {
@@ -192,10 +196,7 @@
     }
   }
 }
-@media (max-width: 1488px) {
-  .header-content {
-    padding: 2em 7vw 1em;
-}
+
 
 @media (max-width: 1126px) {
   .header-content {
@@ -203,7 +204,7 @@
 
     }
   }
-}
+
 
 @media (max-width: 768px) {
   .header-content {
@@ -257,9 +258,11 @@
 .social {
 
   &-menu {
-    padding: 2vw 12vw;
+    padding: 2vw 12vw 0.5vw;
     margin: 0 -12px;
+    border-top: 1px solid rgba($color-light-grey, 0.3);
     border-bottom: 1px solid rgba($color-light-grey, 0.3);
+
 
     &__item {
       margin-right: 3vw;
@@ -317,4 +320,138 @@
 
 .nav-notification {
   padding-right: 10vw;
+}
+
+//
+//.line1 {
+//  position: relative;
+//  margin: 0 auto;
+//  border-right: 2px solid rgba($color-light-grey, .5);
+//  white-space: nowrap;
+//  width: 100%;
+//  overflow: hidden;
+//  transform: translateY(-50%);
+//}
+//
+//.line2 {
+//  position: relative;
+//  margin: 0 auto;
+//  border-right: 2px solid rgba($color-light-grey, .5);
+//  white-space: nowrap;
+//  overflow: hidden;
+//  transform: translateY(-50%);
+//
+//}
+//
+//
+//.anim-typewriter1 {
+//  animation: typewriter1 8s steps(40) 3s 1 normal both,
+//  blinkTextCursor1 1000ms steps(40) infinite normal;
+//}
+//
+//@keyframes typewriter1 {
+//  from {
+//    width: 0;
+//  }
+//  to {
+//    width: 100%;
+//  }
+//}
+//
+//@keyframes blinkTextCursor1 {
+//  from {
+//    border-right-color: $color-dark;
+//  }
+//  to {
+//    border-right-color: transparent;
+//  }
+//}
+//
+//.anim-typewriter2 {
+//  animation: typewriter2 8s steps(40) 13s 1 normal both,
+//  blinkTextCursor2 1000ms steps(40) infinite normal;
+//}
+//
+//@keyframes typewriter2 {
+//  from {
+//    width: 0;
+//  }
+//  to {
+//    width: 100%;
+//  }
+//}
+//
+//@keyframes blinkTextCursor2 {
+//  from {
+//    border-right-color: $color-light-grey;
+//  }
+//  to {
+//    border-right-color: transparent;
+//  }
+//}
+
+
+@keyframes typing {
+  from { width: 100% }
+  to { width: 0 }
+
+}
+
+
+.css-typing h1,
+.css-typing h2{
+  border-right: 1px solid $color-light-grey;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing h1 {
+  width: 100%;
+  animation: type 10s steps(40, end);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h2{
+  width: 100%;
+  opacity: 0;
+  animation: type2 10s steps(40, end);
+  animation-delay: 11s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  95% {
+    border-right: 1px solid $color-light-grey;
+  }
+  100% {
+    border: none;
+  }
+}
+
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  95% {
+    border-right: 1px solid $color-light-grey;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
