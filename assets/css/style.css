@@ -904,6 +904,7 @@ a:hover, a:active {
 
 .body-main {
   background: url("../img/background.jpg") repeat-y center;
+  background-size: contain;
 }
 
 main {
