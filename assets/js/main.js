@@ -15,7 +15,6 @@ function parallax(e){
 }
 
 
-
 function setupTypewriter(t) {
     var HTML = t.innerHTML;
 
@@ -81,7 +80,7 @@ function setupTypewriter(t) {
     };
 }
 
-var typer = document.getElementById('typewriter');
+let typewriter = document.getElementById('typewriter');
 
 typewriter = setupTypewriter(typewriter);
 

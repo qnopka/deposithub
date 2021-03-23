@@ -137,12 +137,13 @@
   flex-direction: column;
   border-bottom: 1px solid rgba($color-light-grey, 0.3);
   z-index: 1;
+
   &__description {
     padding-bottom: 20px;
   }
 
  &__title {
-
+   font-size: 5em;
 
    &-emphasis {
      text-align: left;
@@ -221,7 +222,8 @@
 
 @media (max-width: 1488px) {
   .header-content {
-    &__title {
+    &__title,
+    &__heading{
       margin-top: 50px;
       text-align: center;
 

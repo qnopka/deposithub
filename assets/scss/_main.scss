@@ -1,3 +1,7 @@
+.body-main {
+  background: url("../img/background.jpg") repeat-y center;
+}
+
 main {
   margin-bottom: 5vw;
 }
@@ -38,9 +42,24 @@ main {
   &:nth-of-type(3) {
     margin-top: 8vw;
   }
+
+  &__link {
+    color: $color-dark;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+
+    &:hover,
+    &:active {
+      color: $color-dark;
+      text-decoration: none;
+    }
+  }
+
+
   &__title {
-    font-size: 1.9em;
+    font-size: 1.7em;
     font-weight: 800;
+
   }
 
   @media (max-width: 1488px) {
@@ -55,6 +74,12 @@ main {
     }
   }
 }
+
+.benefit__link:hover p:first-of-type{
+    color: $color-primary;
+    text-decoration: none;
+  }
+
 
 sup {
   padding-right: 15px;
@@ -82,11 +107,12 @@ sup {
 
   &__icon {
     padding: 20px 0;
+    width: 50px;
   }
 
   &__title {
     color: $color-primary;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 800;
   }
 }
@@ -94,7 +120,7 @@ sup {
 .about {
 
   &__title {
-    margin: 0.3em 0 1em -50px;
+    margin: 0.3em 0 1.5em -50px;
   }
   &__description {
     position: relative;
