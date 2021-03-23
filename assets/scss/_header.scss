@@ -142,7 +142,7 @@
   }
 
  &__title {
-   text-align: right;
+
 
    &-emphasis {
      text-align: left;
@@ -322,135 +322,57 @@
   padding-right: 10vw;
 }
 
-//
-//.line1 {
-//  position: relative;
-//  margin: 0 auto;
-//  border-right: 2px solid rgba($color-light-grey, .5);
-//  white-space: nowrap;
-//  width: 100%;
-//  overflow: hidden;
-//  transform: translateY(-50%);
-//}
-//
-//.line2 {
-//  position: relative;
-//  margin: 0 auto;
-//  border-right: 2px solid rgba($color-light-grey, .5);
-//  white-space: nowrap;
-//  overflow: hidden;
-//  transform: translateY(-50%);
-//
-//}
-//
-//
-//.anim-typewriter1 {
-//  animation: typewriter1 8s steps(40) 3s 1 normal both,
-//  blinkTextCursor1 1000ms steps(40) infinite normal;
-//}
-//
-//@keyframes typewriter1 {
-//  from {
-//    width: 0;
-//  }
-//  to {
-//    width: 100%;
-//  }
-//}
-//
-//@keyframes blinkTextCursor1 {
-//  from {
-//    border-right-color: $color-dark;
-//  }
-//  to {
-//    border-right-color: transparent;
-//  }
-//}
-//
-//.anim-typewriter2 {
-//  animation: typewriter2 8s steps(40) 13s 1 normal both,
-//  blinkTextCursor2 1000ms steps(40) infinite normal;
-//}
-//
-//@keyframes typewriter2 {
-//  from {
-//    width: 0;
-//  }
-//  to {
-//    width: 100%;
-//  }
-//}
-//
-//@keyframes blinkTextCursor2 {
-//  from {
-//    border-right-color: $color-light-grey;
-//  }
-//  to {
-//    border-right-color: transparent;
-//  }
-//}
-
-
-@keyframes typing {
-  from { width: 100% }
-  to { width: 0 }
-
-}
-
-
-.css-typing h1,
-.css-typing h2{
-  border-right: 1px solid $color-light-grey;
-  white-space: nowrap;
+.section-paralax {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.css-typing h1 {
-  width: 100%;
-  animation: type 10s steps(40, end);
-  animation-fill-mode: forwards;
-}
-
-.css-typing h2{
-  width: 100%;
-  opacity: 0;
-  animation: type2 10s steps(40, end);
-  animation-delay: 11s;
-  animation-fill-mode: forwards;
+.section-paralax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
-
-@keyframes type {
-  0% {
-    width: 0;
-  }
-  95% {
-    border-right: 1px solid $color-light-grey;
-  }
-  100% {
-    border: none;
-  }
+.var-highlight{
+  color: #C0AD60;
+}
+.string-highlight{
+  color: rgba(253, 149, 90, 0.8);
 }
 
 
-@keyframes type2 {
-  0% {
-    width: 0;
+
+#typewriter{
+
+  &:after{
+    content: "|";
+    font-size: 1em;
+    font-weight: 100;
+    animation: blink 500ms linear infinite alternate;
   }
-  1% {
-    opacity: 1;
-  }
-  95% {
-    border-right: 1px solid $color-light-grey;
-  }
-  100% {
-    opacity: 1;
-    border: none;
-  }
+
 }
 
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
+@keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.title-padding {
+  padding-left: 10vw;
+}
+
+@media (max-width: 668px) {
+
+  .title-padding {
+    padding-left: 2vw;
   }
 }
