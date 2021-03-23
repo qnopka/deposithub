@@ -942,6 +942,7 @@ main {
   -webkit-transition: color 0.3s ease-out;
   -o-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
+  font-weight: 400;
 }
 
 .benefit__link:hover, .benefit__link:active {
