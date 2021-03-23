@@ -1797,6 +1797,9 @@ footer {
     display: block;
     text-align: center;
   }
+  .title-padding {
+    padding-left: 0;
+  }
   .benefit__title {
     font-size: 1.5em;
   }
@@ -1908,9 +1911,6 @@ footer {
 @media (max-width: 668px) {
   .social-menu__scroll {
     display: none;
-  }
-  .title-padding {
-    padding-left: 2vw;
   }
 }
 
