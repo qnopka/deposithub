@@ -28,8 +28,12 @@ h3 {
 }
 
 @media (max-width: 1488px) {
-  h1, h2 {
-    font-size: 3.5em;
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 3.2em;
   }
   h3 {
     font-size: 3em;
@@ -39,23 +43,27 @@ h3 {
   }
 }
 
-@media (max-width: 1126px) {
+@media (max-width: 768px) {
   h1, h2 {
-    font-size: 5vw;
-  }
-  h3 {
-    font-size: 1.7em;
-  }
-
-  .wrapper {
-    padding: 0 6vw;
+    font-size: 7.5vw;
   }
 }
 
 @media (max-width: 620px) {
 
   h1, h2 {
-    font-size: 8vw;
+    font-size: 10vw;
+  }
+
+  .wrapper {
+    padding: 0 2vw;
+  }
+}
+
+@media (max-width: 420px) {
+
+  h1, h2 {
+    font-size: 10.2vw;
   }
 
   .wrapper {

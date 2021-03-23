@@ -735,6 +735,7 @@ a:hover, a:active {
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: 1px solid rgba(172, 172, 172, 0.3);
+  z-index: 1;
 }
 
 .header-content__description {
@@ -854,6 +855,7 @@ a:hover, a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 99;
 }
 
 .section-paralax img {
@@ -866,18 +868,11 @@ a:hover, a:active {
      object-fit: cover;
 }
 
-.var-highlight {
-  color: #C0AD60;
-}
-
-.string-highlight {
-  color: rgba(253, 149, 90, 0.8);
-}
-
 #typewriter:after {
   content: "|";
   font-size: 1em;
   font-weight: 100;
+  color: rgba(172, 172, 172, 0.8);
   -webkit-animation: blink 500ms linear infinite alternate;
           animation: blink 500ms linear infinite alternate;
 }
@@ -1759,6 +1754,12 @@ footer {
   }
 }
 
+@media (max-width: 1820px) {
+  .header-content {
+    padding: 2em 3vw 1em;
+  }
+}
+
 @media (max-width: 1680px) {
   .section-summary__bg {
     background-position: 90% 3vw;
@@ -1766,8 +1767,11 @@ footer {
 }
 
 @media (max-width: 1488px) {
-  h1, h2 {
-    font-size: 3.5em;
+  h1 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 3.2em;
   }
   h3 {
     font-size: 3em;
@@ -1785,6 +1789,14 @@ footer {
   .header-content__title-emphasis {
     font-size: 3em;
   }
+  .header-content__title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .header-content__title-emphasis {
+    display: block;
+    text-align: center;
+  }
   .benefit__title {
     font-size: 1.5em;
   }
@@ -1797,23 +1809,8 @@ footer {
 }
 
 @media (max-width: 1126px) {
-  h1, h2 {
-    font-size: 5vw;
-  }
-  h3 {
-    font-size: 1.7em;
-  }
-  .wrapper {
-    padding: 0 6vw;
-  }
   .header-content__title-emphasis {
     font-size: 5vw;
-  }
-  .header-content {
-    padding: 2em 3vw 1em;
-  }
-  .header-content__title {
-    margin-top: 50px;
   }
   .section-content__home {
     padding-top: 10vw;
@@ -1887,6 +1884,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  h1, h2 {
+    font-size: 7.5vw;
+  }
   .header-content p {
     text-align: center;
   }
@@ -1896,16 +1896,6 @@ footer {
   }
   .summary-desc__card-title {
     font-size: 12vw;
-  }
-}
-
-@media (max-width: 710px) {
-  .header-content__title {
-    text-align: center;
-  }
-  .header-content__title-emphasis {
-    display: block;
-    text-align: center;
   }
 }
 
@@ -1926,7 +1916,7 @@ footer {
 
 @media (max-width: 620px) {
   h1, h2 {
-    font-size: 8vw;
+    font-size: 10vw;
   }
   .wrapper {
     padding: 0 2vw;
@@ -1969,6 +1959,15 @@ footer {
 @media (max-width: 450px) {
   .summary-desc {
     margin: 3vw 3vw;
+  }
+}
+
+@media (max-width: 420px) {
+  h1, h2 {
+    font-size: 10.2vw;
+  }
+  .wrapper {
+    padding: 0 2vw;
   }
 }
 
