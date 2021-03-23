@@ -1056,10 +1056,6 @@ sup {
   max-width: 100%;
 }
 
-.section-summary__bg {
-  background: url("../img/bg.jpg") no-repeat 78% 5vw;
-}
-
 .rating-area {
   overflow: hidden;
   width: 180px;
