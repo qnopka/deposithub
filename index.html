@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
 
 </head>
 <body class="body-main">
@@ -129,11 +130,11 @@
 <main class="container-fluid">
   <div class="wrapper">
     <section class="container-fluid section-content__home">
-      <h2>Deposithub <span class="title-accent__primary">LLC</span></h2>
+      <h2 class="wow bounceInDown">Deposithub <span class="title-accent__primary">LLC</span></h2>
 
       <div class="row justify-content-around benefits-container">
 
-          <div class="col-lg-3 col-md-6 col-sm-12 text-center benefit mb-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 text-center benefit mb-3 wow bounceIn">
             <a href="#" class="benefit__link">
               <p class="benefit__title"><sup>01</sup>SHOPPER</p>
               <p class="benefit__description">Get the physical address in sales free tax state and start saving.
@@ -143,7 +144,7 @@
 
 
 
-          <div class="col-lg-3 col-md-6 col-sm-12 text-center benefit mb-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 text-center benefit mb-3 wow bounceIn">
             <a href="#" class="benefit__link">
               <p class="benefit__title"><sup>02</sup>VENDOR</p>
               <p class="benefit__description">We providing storage for your merchandise 20 cubic feet only for $5 a month
@@ -153,7 +154,7 @@
 
 
 
-          <div class="col-lg-3 col-md-6 col-sm-12 text-center benefit mb-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 text-center benefit mb-3 wow bounceIn">
             <a href="#" class="benefit__link">
               <p class="benefit__title"><sup>03</sup>PAPER MAIL ONLY</p>
               <p class="benefit__description">Get your physical address for your business or any paper mail (magazines,
@@ -700,5 +701,18 @@
 <script src="libs/popper.js/dist/umd/popper.min.js"></script>
 <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/wow.js"></script>
+<script>
+
+  wow = new WOW( {
+            boxClass:     'wow',
+            animateClass: 'animated',
+            offset:       160
+          }
+  );
+
+  wow.init();
+
+</script>
 </body>
 </html>
