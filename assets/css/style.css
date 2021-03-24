@@ -1411,7 +1411,7 @@ sup {
 }
 
 .section-service__row {
-  border-bottom: 1px solid #6958d9;
+  border-bottom: 1px solid rgba(172, 172, 172, 0.3);
   padding: 6vw 0;
 }
 
