@@ -1962,6 +1962,9 @@ footer {
 }
 
 @media (max-width: 596px) {
+  .header-content__heading {
+    margin-top: 2vw;
+  }
   .header-content__title {
     font-size: 2em;
   }

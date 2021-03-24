@@ -203,7 +203,6 @@
 @media (max-width: 1820px) {
   .header-content {
     padding: 2em 3vw 1em;
-
     }
   }
 
@@ -237,8 +236,12 @@
 }
 
 
+
 @media (max-width: 596px) {
   .header-content {
+    &__heading {
+      margin-top: 2vw;
+    }
     &__title {
       font-size: 2em;
 
