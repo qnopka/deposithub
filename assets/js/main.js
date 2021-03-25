@@ -15,7 +15,7 @@ function parallax(e){
 }
 
 $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
+    let scroll = $(window).scrollTop();
     if(scroll < 50){
         $('.fixed-top').css('background', 'transparent');
         $('.navbar-service').css('background', '#f8f6fe');
@@ -24,6 +24,7 @@ $(window).scroll(function(){
         $('.navbar-service').css('background', '#ffffff');
     }
 });
+
 
 
 function setupTypewriter(t) {

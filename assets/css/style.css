@@ -650,6 +650,7 @@ a:hover, a:active {
   border-bottom: 0;
   background: transparent;
   position: relative;
+  background-color: #f8f6fe;
 }
 
 .navbar-service-bg {
