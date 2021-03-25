@@ -595,6 +595,7 @@ h1 {
 h2 {
   font-size: 2.8em;
   font-weight: 700;
+  line-height: 1.5em;
   margin: 0 0 0.7em 0;
 }
 
@@ -741,7 +742,7 @@ a:hover, a:active {
 }
 
 .header-content__title {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .header-content__title-emphasis {
@@ -783,7 +784,6 @@ a:hover, a:active {
 
 .social-menu {
   padding: 2vw 12vw 0.5vw;
-  margin: 0 -12px;
   border-top: 1px solid rgba(172, 172, 172, 0.3);
   border-bottom: 1px solid rgba(172, 172, 172, 0.3);
 }
@@ -1422,6 +1422,10 @@ sup {
   border-bottom: none;
 }
 
+.section-service__card {
+  padding: 0 4vw 3vw;
+}
+
 .section-service__title {
   font-size: 1.5em;
   font-weight: 700;
@@ -1866,6 +1870,9 @@ footer {
   }
   .header-content__service {
     padding-top: 18vw;
+  }
+  .header-content__title {
+    font-size: 2.8em;
   }
   .header-content__title, .header-content__heading {
     margin-top: 50px;
