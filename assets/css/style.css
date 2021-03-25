@@ -595,12 +595,12 @@ h1 {
 h2 {
   font-size: 2.8em;
   font-weight: 700;
-  line-height: 1.5em;
   margin: 0 0 0.7em 0;
 }
 
 h3 {
   font-size: 2.2em;
+  line-height: 1.5em;
   font-weight: 700;
   margin: 0 0 0.7em 0;
 }
@@ -704,7 +704,7 @@ a:hover, a:active {
 
 .nav-btn {
   margin-left: 0.5vw;
-  border-radius: 10px;
+  font-size: 0.8572em;
   border: none;
   color: #ffffff;
   padding: 10px 3vw;
@@ -752,8 +752,7 @@ a:hover, a:active {
 
 .header-content__title-opacity {
   margin: 1vw 0;
-  opacity: 0.05;
-  color: #000000;
+  color: rgba(172, 172, 172, 0.15);
   font-size: 9vw;
   line-height: 1em;
 }
@@ -1448,7 +1447,7 @@ sup {
 }
 
 .section-service__advantage {
-  padding: 0 5vw;
+  padding: 0 8vw;
 }
 
 .section-service__image {
@@ -1568,8 +1567,8 @@ sup {
 
 .btn-light {
   background-color: #ffffff;
-  border-radius: 10px;
-  padding: 10px 3vw;
+  padding: 8px 3vw;
+  outline: none;
   margin-left: 0.5vw;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;

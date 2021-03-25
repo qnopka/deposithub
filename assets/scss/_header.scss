@@ -35,7 +35,6 @@
 
       &__second {
         background: url(../img/bg-header-service-2.png) no-repeat 75% 13vw;
-        //background-size: contain;
         min-height: 70vh;
         border-bottom: 0;
       }
@@ -129,7 +128,7 @@
 
   &-btn {
     margin-left: 0.5vw;
-    border-radius: 10px;
+    font-size: 0.8572em;
     border: none;
     color: $color-light;
     padding: 10px 3vw;
@@ -191,8 +190,7 @@
    }
    &-opacity {
      margin: 1vw 0;
-    opacity: 0.05;
-     color: $color-dark;
+     color: rgba($color-light-grey, .15);
      font-size: 9vw;
      line-height: 1em;
 

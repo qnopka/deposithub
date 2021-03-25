@@ -644,7 +644,7 @@ sup {
   }
 
   &__advantage {
-    padding: 0 5vw;
+    padding: 0 8vw;
   }
 
   &__image {
@@ -781,8 +781,8 @@ sup {
 
 .btn-light {
   background-color: $color-light;
-  border-radius: 10px;
-  padding: 10px 3vw;
+  padding: 8px 3vw;
+  outline: none;
   margin-left: 0.5vw;
   transition: all 0.3s ease-out;
 
