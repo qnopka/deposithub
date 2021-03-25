@@ -16,10 +16,12 @@ function parallax(e){
 
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-    if(scroll < 200){
+    if(scroll < 50){
         $('.fixed-top').css('background', 'transparent');
+        $('.navbar-service').css('background', '#f8f6fe');
     } else{
         $('.fixed-top').css('background', '#ffffff');
+        $('.navbar-service').css('background', '#ffffff');
     }
 });
 
