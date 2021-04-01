@@ -129,3 +129,12 @@ input[type=checkbox], input[type=radio] {
   border-color: $color-accent;
   background-color: $color-accent;
 }
+
+.table-wrap-dark {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  background-color: transparent;
+  padding: 2vw 3vw;
+  color: $color-light;
+}

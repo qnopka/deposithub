@@ -390,16 +390,42 @@ sup {
   padding: 5vw 3vw 2vw;
 }
 
+.user-main-dark {
+  background-color: #2b2d3c;
+  margin-bottom: 0;
+  width: 100vw;
+
+}
+
 .left-sidebar {
   width: 80px;
   padding-top: 5vw;
   min-height: calc(100vh - 62px);
-
-
     div {
       position: fixed;
       padding-left: 8px;
     }
+  &--dark {
+    background-color: #2f3242;
+    width: 55px;
+    box-shadow: 0 0 20px rgba($color-dark, 0.3);
+
+
+    & .far.active,
+    & .fas.active{
+      color: $color-light;
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+      }
+    }
+
+    & .far:hover,
+    & .fas:focus {
+      color: $color-light;
+    }
+  }
 }
 
 .user-nav__menu {
@@ -418,7 +444,7 @@ sup {
 }
 
 .nav-link__user {
-  padding: 1rem;
+  padding: 0.7vw;
   text-align: center;
 }
 
@@ -571,6 +597,17 @@ sup {
     th:first-child,
     td:first-child {
       text-align: center;
+    }
+
+    @media  (max-width: 600px) {
+      th:first-child,
+      td:first-child {
+        text-align: right;
+      }
+       td {
+         padding-left: 10px;
+       }
+
     }
   }
 
@@ -809,5 +846,71 @@ sup {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+
+.admin-toolbar {
+  background-color: $color-primary;
+  padding: 20px 40px 15px 40px;
+  color: $color-light;
+
+  @media (max-width: 735px) {
+    &-right {
+      padding-top: 10px;
+    }
+  }
+  &__item {
+    padding: 0 10px;
+
+    & span {
+      font-style: italic;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__btn {
+    background-color: #3a3e52;
+    border-radius: 30px;
+    color: $color-light;
+    padding: 5px 20px;
+
+    & .fas {
+      padding: 0 0 0 15px;
+      color: $color-primary;
+      font-size: 1em;
+    }
+    &:hover,
+    &:active {
+      background-color: $color-light;
+    }
+  }
+
+}
+
+
+@media (max-width: 735px) {
+  .admin-toolbar {
+    padding: 20px 5vw 15px;
+    &__btn {
+      padding: 5px 10px;
+      & .fas {
+        padding: 0 0 0 5px;
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .admin-toolbar {
+    &__item {
+      span {
+        font-size: 0.8em;
+      }
+    }
   }
 }

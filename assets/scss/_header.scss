@@ -372,12 +372,41 @@
       border-left: 1px solid rgba($color-light-grey, 0.3);
       padding: 20px 10px 10px;
     }
+
+    &-dark {
+      & .far {
+        color: $color-light;
+        padding: 20px;
+
+        &:hover,
+        &:focus {
+          color: $color-primary;
+        }
+      }
+    }
+    &__item {
+      position: relative;
+    }
   }
 }
-
+.notification-label {
+  position: absolute;
+  display: block;
+  background-color: $color-accent-light;
+  top: 21px;
+  right: 18px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
 .nav-notification {
   padding-right: 10vw;
+ &--dark {
+   background-color: #2f3242;
+   box-shadow: 0 0 20px rgba($color-dark, 0.3);
+ }
 }
+
 
 .section-paralax {
   position: relative;
