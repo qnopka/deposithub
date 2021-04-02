@@ -1845,17 +1845,17 @@ sup {
 }
 
 .request {
-  padding: 20px;
+  padding: 20px 20px 10px;
 }
 
 .request__item {
-  padding: 0 2vw;
+  padding-bottom: 40px;
   overflow-wrap: break-word;
 }
 
 .request__title {
   font-weight: 700;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .request__btn {

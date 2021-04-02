@@ -933,17 +933,17 @@ sup {
 
 
 .request {
-  padding: 20px;
+  padding: 20px 20px 10px;
 
 
   &__item {
-    padding: 0 2vw;
+    padding-bottom: 40px;
     //hyphens: auto;
     overflow-wrap: break-word;
   }
   &__title {
     font-weight: 700;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   &__btn {
