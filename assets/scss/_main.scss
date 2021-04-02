@@ -394,6 +394,7 @@ sup {
   background-color: #2b2d3c;
   margin-bottom: 0;
   width: 100vw;
+  color: $color-light;
 
 }
 
@@ -828,7 +829,7 @@ sup {
   &:active{
     text-decoration: none;
     background-color: $color-accent;
-    color: #ffffff;
+    color: $color-light;
   }
 }
 
@@ -873,7 +874,7 @@ sup {
   }
 
   &__btn {
-    background-color: #3a3e52;
+    background-color: $color-grey;
     border-radius: 30px;
     color: $color-light;
     padding: 5px 20px;
@@ -914,3 +915,56 @@ sup {
     }
   }
 }
+
+.container-admin {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: $color-dark-grey;
+  box-shadow: 0 0 20px rgba($color-dark, 0.3);
+
+  &-block {
+    height: 100%;
+  }
+}
+
+
+.request {
+  padding: 20px;
+
+
+  &__item {
+    padding: 0 2vw;
+    //hyphens: auto;
+    overflow-wrap: break-word;
+  }
+  &__title {
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+
+  &__btn {
+    border: none;
+    color: $color-light;
+    padding: 15px 30px;
+    margin: 10px;
+    box-shadow: -3px 5px 10px rgba($color-dark, 0.5);
+    background-color: #2a2c3b;
+    transition: all 0.3s ease-out;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary;
+    }
+  }
+  &__btn--accent {
+    background-color: #3d4057;
+  }
+
+  &__link {
+    color: $color-light;
+    text-decoration: underline;
+    transition: color 0.3s ease-out;
+
+  }
+}
+

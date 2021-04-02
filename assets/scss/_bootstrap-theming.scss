@@ -138,3 +138,76 @@ input[type=checkbox], input[type=radio] {
   padding: 2vw 3vw;
   color: $color-light;
 }
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding-right: 6vw;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 7px;
+  right: 5vw;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+@media (max-width: 1630px) {
+  .checkmark {
+    right: 1vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkmark {
+    right: 10vw;
+  }
+}
+
+@media (max-width: 578px) {
+  .checkmark {
+    right: 1vw;
+
+  }
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #eee;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 4px;
+  top: 0;
+  width: 7px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

@@ -402,7 +402,7 @@
 .nav-notification {
   padding-right: 10vw;
  &--dark {
-   background-color: #2f3242;
+   background-color: $color-dark-grey;
    box-shadow: 0 0 20px rgba($color-dark, 0.3);
  }
 }

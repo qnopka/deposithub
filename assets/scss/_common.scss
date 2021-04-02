@@ -169,7 +169,7 @@ option{
 }
 
 .table-wrap-dark tr:not(.thead) {
-  background-color: #3a3e52;
+  background-color: $color-grey;
 
   &:hover {
     background-color: #484c64;
@@ -185,6 +185,7 @@ option{
   text-align: left;
 }
 
+
 .table-wrap-dark th:nth-of-type(3), .table-wrap-dark td:nth-of-type(3) {
   padding: 10px 20vw 10px 5vw;
 }
@@ -192,6 +193,7 @@ option{
 .table-wrap-dark  td:first-of-type {
   border-left: 2px solid $color-light;
 }
+
 
 .table-wrap-dark td:first-of-type,
 .table-wrap-dark td:nth-of-type(2),
