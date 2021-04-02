@@ -396,7 +396,11 @@ sup {
   width: 100vw;
   color: $color-light;
 
+  &--padding {
+    padding: 2vw;
+  }
 }
+
 
 .left-sidebar {
   width: 80px;

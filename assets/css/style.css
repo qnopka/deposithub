@@ -1355,6 +1355,10 @@ sup {
   color: #ffffff;
 }
 
+.user-main-dark--padding {
+  padding: 2vw;
+}
+
 .left-sidebar {
   width: 80px;
   padding-top: 5vw;
