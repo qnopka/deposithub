@@ -163,6 +163,10 @@ input[type=checkbox] {
   color: $color-dark;
 }
 
+.regular-checkbox:checked:before {
+  background-color: #e9ecee;
+}
+
 .regular-checkbox:checked:after {
   content: '\2714';
   font-size: 14px;
