@@ -2431,6 +2431,10 @@ footer {
 }
 
 @media (max-width: 450px) {
+  .regular-checkbox:checked:after {
+    font-size: 14px;
+    left: 1px;
+  }
   .summary-desc {
     margin: 3vw 3vw;
   }
