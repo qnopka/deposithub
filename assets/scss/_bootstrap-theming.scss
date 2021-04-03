@@ -168,6 +168,9 @@ input[type=checkbox] {
   top:0;
 }
 
+label {
+  cursor: pointer;
+}
 
 @media (max-width: 450px) {
   .regular-checkbox:checked:after {

@@ -616,6 +616,10 @@ input[type=checkbox] {
   top: 0;
 }
 
+label {
+  cursor: pointer;
+}
+
 body {
   color: #000000;
   background-size: contain;
